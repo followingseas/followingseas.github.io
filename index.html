@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Followingseas — open-source tools for smoother AI voyages</title>
+  <meta name="description" content="Fair winds and following seas for your AI voyages — open-source tools for developers working with AI coding agents." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --abyss: #0b1f2a;
+      --abyss-deep: #071722;
+      --foam: #e8f6f2;
+      --shallow: #56b7c3;
+      --deep: #1f7a93;
+      --text-dim: #9db8bd;
+      --line: rgba(86, 183, 195, 0.18);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(160deg, #123b4a 0%, var(--abyss) 45%, var(--abyss-deep) 100%);
+      color: var(--foam);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+    main {
+      width: min(680px, 92vw);
+      padding: 96px 0 48px;
+      text-align: center;
+    }
+    .mark { width: 88px; height: 88px; }
+    .mark path {
+      animation: drift 7s ease-in-out infinite;
+    }
+    .mark path:nth-child(2) { animation-delay: 0.5s; }
+    .mark path:nth-child(3) { animation-delay: 1s; }
+    @keyframes drift {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(7px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .mark path { animation: none; }
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+    .tagline {
+      margin-top: 14px;
+      font-family: Charter, Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.05rem, 3vw, 1.3rem);
+      color: var(--shallow);
+    }
+    .lede {
+      margin: 22px auto 0;
+      max-width: 46ch;
+      color: var(--text-dim);
+      font-size: 0.98rem;
+    }
+    .actions { margin-top: 34px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--foam);
+      text-decoration: none;
+      font-size: 0.92rem;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .btn:hover { border-color: var(--shallow); background: rgba(86, 183, 195, 0.08); }
+    .btn:focus-visible { outline: 2px solid var(--shallow); outline-offset: 2px; }
+    section.instruments {
+      margin-top: 84px;
+      text-align: left;
+    }
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--deep);
+      text-align: center;
+    }
+    .cards {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      display: block;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .card:hover { border-color: var(--shallow); background: rgba(86, 183, 195, 0.06); }
+    .card:focus-visible { outline: 2px solid var(--shallow); outline-offset: 2px; }
+    .card h3 { font-size: 1.02rem; color: var(--foam); }
+    .card p { margin-top: 8px; font-size: 0.88rem; color: var(--text-dim); }
+    .card .hint { margin-top: 12px; font-size: 0.78rem; color: var(--deep); }
+    footer {
+      margin-top: auto;
+      padding: 56px 0 40px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--deep);
+    }
+    footer .blessing {
+      font-family: Charter, Georgia, serif;
+      color: var(--text-dim);
+    }
+    footer a { color: var(--shallow); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg class="mark" viewBox="0 0 512 512" role="img" aria-label="Followingseas mark — three waves flowing forward">
+      <g fill="none" stroke-linecap="butt">
+        <path d="M 92 172 C 148 136, 214 136, 270 172 C 316 201, 368 204, 420 181" stroke="#E8F6F2" stroke-width="38"/>
+        <path d="M 92 266 C 148 230, 214 230, 270 266 C 316 295, 368 298, 420 275" stroke="#56B7C3" stroke-width="38"/>
+        <path d="M 92 360 C 148 324, 214 324, 270 360 C 316 389, 368 392, 420 369" stroke="#1F7A93" stroke-width="38"/>
+      </g>
+    </svg>
+
+    <h1>Followingseas</h1>
+    <p class="tagline">Fair winds and following seas for your AI voyages.</p>
+    <p class="lede">
+      Open-source tools for developers working with AI coding agents —
+      built to push from behind, never to take the helm.
+    </p>
+    <div class="actions">
+      <a class="btn" href="https://github.com/followingseas">GitHub →</a>
+    </div>
+
+    <section class="instruments">
+      <p class="section-label">Instruments</p>
+      <div class="cards">
+        <a class="card" href="https://github.com/jeongph/wake">
+          <h3>Wake</h3>
+          <p>Trace the wake of your Claude Code sessions — browse past conversations beautifully, then resume or fork them where they ended.</p>
+          <p class="hint">Electron · macOS</p>
+        </a>
+        <a class="card" href="https://github.com/jeongph/clauncher">
+          <h3>clauncher</h3>
+          <p>Set your course before you sail — a tiny launcher that starts the Claude CLI with your saved presets.</p>
+          <p class="hint">CLI · npm</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="blessing">당신의 AI 항해에 순풍과 순류가 함께하기를.</p>
+    <p style="margin-top: 10px;"><a href="https://github.com/followingseas">github.com/followingseas</a></p>
+  </footer>
+</body>
+</html>

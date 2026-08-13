@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Followingseas — open-source tools for smoother AI voyages</title>
-  <meta name="description" content="Fair winds and following seas for your AI voyages — open-source tools for developers working with AI coding agents." />
+  <title>Followingseas — AI 항해를 순조롭게 하는 오픈소스 도구</title>
+  <meta name="description" content="Fair winds and following seas for your AI voyages — AI 코딩 에이전트와 함께 일하는 개발자를 위한 오픈소스 도구." />
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     :root {
@@ -26,6 +26,7 @@
       flex-direction: column;
       align-items: center;
       line-height: 1.6;
+      word-break: keep-all;
     }
     main {
       width: min(680px, 92vw);
@@ -123,7 +124,7 @@
 </head>
 <body>
   <main>
-    <svg class="mark" viewBox="0 0 512 512" role="img" aria-label="Followingseas mark — three waves flowing forward">
+    <svg class="mark" viewBox="0 0 512 512" role="img" aria-label="Followingseas 마크 — 앞으로 흐르는 세 개의 파도">
       <g fill="none" stroke-linecap="butt">
         <path d="M 92 172 C 148 136, 214 136, 270 172 C 316 201, 368 204, 420 181" stroke="#E8F6F2" stroke-width="38"/>
         <path d="M 92 266 C 148 230, 214 230, 270 266 C 316 295, 368 298, 420 275" stroke="#56B7C3" stroke-width="38"/>
@@ -134,8 +135,8 @@
     <h1>Followingseas</h1>
     <p class="tagline">Fair winds and following seas for your AI voyages.</p>
     <p class="lede">
-      Open-source tools for developers working with AI coding agents —
-      built to push from behind, never to take the helm.
+      AI 코딩 에이전트와 함께 일하는 개발자를 위한 오픈소스 도구 —
+      뒤에서 밀어줄 뿐, 키를 잡지 않습니다.
     </p>
     <div class="actions">
       <a class="btn" href="https://github.com/followingseas">GitHub →</a>
@@ -146,18 +147,33 @@
       <div class="cards">
         <a class="card" href="https://github.com/followingseas/pilot">
           <h3>Pilot</h3>
-          <p>The rutter runtime — serves your team's conventions and knowledge to AI coding agents, from any project directory.</p>
+          <p>rutter 런타임 — 팀의 규약과 지식을 어떤 프로젝트 위치에서든 AI 코딩 에이전트에 제공합니다.</p>
           <p class="hint">CLI · MCP</p>
         </a>
         <a class="card" href="https://github.com/followingseas/wake">
           <h3>Wake</h3>
-          <p>Trace the wake of your Claude Code sessions — browse past conversations beautifully, then resume or fork them where they ended.</p>
+          <p>Claude Code 세션이 남긴 항적을 따라가세요 — 지난 대화를 읽기 좋게 열람하고, 끝난 지점에서 그대로 이어가거나 분기합니다.</p>
           <p class="hint">Electron · macOS</p>
         </a>
         <a class="card" href="https://github.com/followingseas/tiller">
           <h3>Tiller</h3>
-          <p>A thin launcher that steers the claude CLI — save your model, permission mode, and effort once, and every launch carries them.</p>
+          <p>claude CLI 를 조타하는 얇은 런처 — model · permission mode · effort 를 한 번 저장하면 매 실행에 그대로 얹어 줍니다.</p>
           <p class="hint">CLI</p>
+        </a>
+        <a class="card" href="https://github.com/followingseas/rigging">
+          <h3>Rigging</h3>
+          <p>나의 에이전트 하네스 구성(rig)을 구조화된 프로필로 공개하고, 다른 사람은 무엇을 얹고 항해하는지 찾아보고 팔로우합니다.</p>
+          <p class="hint">Web</p>
+        </a>
+        <a class="card" href="https://github.com/followingseas/daymark">
+          <h3>Daymark</h3>
+          <p>손짓으로 가리키던 것에 표준 명칭을 달아 주는 소프트웨어 용어 사전 — 사람과 AI 에이전트가 같은 어휘로 대화하게 합니다.</p>
+          <p class="hint">Terms · Web</p>
+        </a>
+        <a class="card" href="https://github.com/followingseas/rutter">
+          <h3>Rutter</h3>
+          <p>우리 조직의 항해 지침서 — 공용 규약과 조망 지도를 담으며, Pilot이 읽는 레퍼런스 rutter 인스턴스입니다.</p>
+          <p class="hint">Conventions · Charts</p>
         </a>
       </div>
     </section>
